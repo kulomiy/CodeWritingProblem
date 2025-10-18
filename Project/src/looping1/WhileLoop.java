@@ -1,13 +1,14 @@
 package looping1;
 
 public class WhileLoop {
+    // Menerjemahkan semua bilangan genap sampai n
     public int getEvenNumbersAndSum(int n) {
-        int sum = 0;
-        int i = 1;
-        while (i <= n) {
-            if (i % 2 == 0) sum += i;
-            i++;
+        int sum = 0;                           // Total
+        int i = 1;                             // Awal hitungan
+        while (i <= n) {                       // Ulangi sampai i melebihi n
+            if (i % 2 == 0) sum += i;          // Jika genap
+            i++;                               // Naikan i
         }
-        return sum;
+        return sum;                            // Kembalikan hasil akhir
     }
 }
